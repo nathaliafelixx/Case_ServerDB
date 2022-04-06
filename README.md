@@ -5,7 +5,7 @@
 Nathalia Felix Rosa
 
 ## Objetivos
-Criar e configurar um ambiente de servidor linux, para ambiente  de testes de uma aplicação
+Criar e configurar um ambiente de servidor linux, para ambiente  de testes de uma aplicação X
 
 ## Especificações
 
@@ -27,7 +27,9 @@ Criar e configurar um ambiente de servidor linux, para ambiente  de testes de um
  - Acessível remotamente via IP;
 
  ### Detalhes da Instalação e configuração da VM
-  
+ 
+*Nesta etapa foi realizada a instalação da máquina virtual utilizando a ferramenta Virtualbox, utilizando  a ISO do S.O  e ajustados as configuraçoes conforme requisitos*
+
   **MEMORIA**  
  
 
@@ -84,6 +86,7 @@ Criar e configurar um ambiente de servidor linux, para ambiente  de testes de um
     /dev/sda1     2048     4095     2048    1M BIOS boot
     /dev/sda2     4096  1861631  1857536  907M Linux filesystem
     /dev/sda3  1861632 20969471 19107840  9.1G Linux filesystem
+    
 
 **REDE**
 
@@ -112,7 +115,9 @@ Criar e configurar um ambiente de servidor linux, para ambiente  de testes de um
     useroperacao@infraop:/$
  
 ##  Detalhes da Instalação e configuração das aplicações
-    
+
+     ***Com a maquina virtual configurada e o Ubuntu Server instalado, nesta etapa foi realizada a instalação e configuração das aplicaçoes indicadas nos reuisitos *** 
+
  **Docker**
 
     useroperacao@infraop:~$ sudo dpkg -l | grep Docker
@@ -121,6 +126,11 @@ Criar e configurar um ambiente de servidor linux, para ambiente  de testes de um
     ii  docker-ce-rootless-extras             5:20.10.14~3-0~ubuntu-focal        amd64        Rootless support for Docker.
     ii  docker-scan-plugin                    0.17.0~ubuntu-focal                amd64        Docker scan cli plugin.
 
+    docker run -p 80:80 \
+        --name PGADMIN \
+        -e 'PGADMIN_DEFAULT_EMAIL=operacao@infraop.com' \
+        -e 'PGADMIN_DEFAULT_PASSWORD=SuperSecret' \
+        -d dpage/pgadmin4
 
   **postgresql**
   
@@ -152,10 +162,26 @@ Criar e configurar um ambiente de servidor linux, para ambiente  de testes de um
     host    replication     all             ::1/128                 md5
     useroperacao@infraop:/$ 
 
+    useroperacao@infraop:/etc/postgresql/12/main$ cat  postgresql.conf | less
+    # CONNECTIONS AND AUTHENTICATION
+    #------------------------------------------------------------------------------
+
+    # - Connection Settings -
+
+    listen_addresses = '*'          # what IP address(es) to listen on;
+                                            # comma-separated list of addresses;
+                                            # defaults to 'localhost'; use '*' for all
+                                            # (change requires restart)
+    port = 5432                             # (change requires restart)
+    max_connections = 100                   # (change requires restart)
 
     
 **instancia Container**
 
+     ***Nesta etapa foi inicalizada uma instancia Container via Docker com a imagem do Pgadmin *** 
+        
+     
+     
     dev@infraop:~$ docker ps
     CONTAINER ID   IMAGE            COMMAND            CREATED        STATUS        PORTS                                        NAMES
     02e7e301157e   dpage/pgadmin4   "/entrypoint.sh"   42 hours ago   Up 19 hours   0.0.0.0:80->80/tcp, :::80->80/tcp, 443/tcp   PGADMIN
