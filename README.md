@@ -272,7 +272,7 @@ Criar e configurar um ambiente de servidor linux, para ambiente  de testes de um
     ALTER TABLE IF EXISTS public.tb_cadastro_produto
         OWNER to postgres;
         
-   ## Diagrama
-   
+   ## Diagrama de Entidade e Relacionamento
+![Diagrama de Entidade e Relacionamento](https://github.com/nathaliafelixx/Case_estagio/raw/main/imagem/diagramaDB.png)   
    
    
