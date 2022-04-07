@@ -567,14 +567,14 @@ Pacotes de instalação:
 -----------------------------------------------------------------
 
 ## Foruns e documentaçoes consultadas:
+Foi necessario rever alguns conceitos de BD e relaciomento entre tabelas, consultar documentaçoes das aplicaçoes (principalmente para o Pstgres) Consultado tambem foruns sobre markdown e utilização do Git, alem de mais detalhes sobre elementos do docker( inspect e image)
 
 [https://sysadminxpert.com/how-to-install-postgresql-12-on-ubuntu/](https://sysadminxpert.com/how-to-install-postgresql-12-on-ubuntu/)
-
   
 
 [https://releases.ubuntu.com/20.04/](https://releases.ubuntu.com/20.04/)
 
-  
+
 
 [https://www.postgresql.org/docs/12/datatype.html](https://www.postgresql.org/docs/12/datatype.html)
 
