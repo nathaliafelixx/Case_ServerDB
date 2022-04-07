@@ -564,5 +564,47 @@ Pacotes de instalação:
       52  login useroperacao
       53  exit
       54  history >>/home/useroperacao/history.txt
+-----------------------------------------------------------------
+
+## Foruns e documentaçoes consultadas:
+
+[https://sysadminxpert.com/how-to-install-postgresql-12-on-ubuntu/](https://sysadminxpert.com/how-to-install-postgresql-12-on-ubuntu/)
+
+  
+
+[https://releases.ubuntu.com/20.04/](https://releases.ubuntu.com/20.04/)
+
+  
+
+[https://www.postgresql.org/docs/12/datatype.html](https://www.postgresql.org/docs/12/datatype.html)
+
+  
+
+[https://stackedit.io/app#](https://stackedit.io/app#)
+
+  
+
+[http://pgdocptbr.sourceforge.net/pg80/plpgsql-declarations.html](http://pgdocptbr.sourceforge.net/pg80/plpgsql-declarations.html)
+
+  
+
+[https://docs.docker.com/engine/reference/commandline/docker/](https://docs.docker.com/engine/reference/commandline/docker/)
+
+  
+
+[https://stackoverflow.com/questions/38466190/cant-connect-to-postgresql-on-port- oficiais](https://stackoverflow.com/questions/38466190/cant-connect-to-postgresql-on-port-)
+
+  
+
+[https://www.youtube.com/watch?v=p9LUVzgnif8&list=RDCMUCEBieECyJD82RNCmAAmw77A&start_radio=1&rv=p9LUVzgnif8&t=140](https://www.youtube.com/watch?v=p9LUVzgnif8&list=RDCMUCEBieECyJD82RNCmAAmw77A&start_radio=1&rv=p9LUVzgnif8&t=140)
+
+  
+
+[https://www.youtube.com/watch?v=brB4BQUiAIA](https://www.youtube.com/watch?v=brB4BQUiAIA)
+
+  
+
+[https://pankajconnect.medium.com/all-about-pg-hba-conf-authentication-methods-postgresql-95137d896105#:~:text=authentication%20methods%2D%20Postgresql)-,pg_hba.,directory%20(PostgreSQL10)%20by%20default.&text=Make%20the%20shell%20can%20connect,authentication%20file%20%24PGDATA%2Fpg_hba.](https://pankajconnect.medium.com/all-about-pg-hba-conf-authentication-methods-postgresql-95137d896105#:~:text=authentication%20methods%2D%20Postgresql)
+
 
    
