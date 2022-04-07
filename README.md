@@ -15,7 +15,7 @@ Criar e configurar um ambiente de servidor linux, para ambiente  de testes de um
  * Disco: 1 disco de 10 GB para boot;
  * Sistema operacional: Linux Ubuntu Server 20.04 LTS;
  * Serviço SSH habitado;
-### Requisitos de instalação e configuração Banco de Dados**
+### Requisitos de instalação e configuração Banco de Dados
  * Postgresql;
  * versão: 12;
  * 1 usuario com nome dev, capaz de executar cos comandos docker
