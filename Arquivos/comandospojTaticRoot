@@ -1,0 +1,47 @@
+    1  lshw -C network
+    2  cd /etc/netplan/ && ls
+    3  vim /etc/netplan/00-installer-config.yaml
+    4  cp 00-installer-config.yaml 00-installer-config.bkp
+    5  vim /etc/netplan/00-installer-config.yaml
+    6  netplan apply
+    7  ip a
+    8  ip addr show
+    9  clear
+   10  telnet localhost 22
+   11  reboot
+   12  history 
+   13  apt update && apt upgrade
+   14  apt search postgresql
+   15  clear
+   16  wget --help
+   17  clear
+   18  wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | sudo apt-key add -
+   19  echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" |sudo tee  /etc/apt/sources.list.d/pgdg.list
+   20  apt update
+   21  sudo apt -y install postgresql-12 postgresql-client-12
+   22  apt install bash-completion
+   23  systemctl postgresql.services
+   24  systemctl postgresql.service
+   25  systemctl status postgresql.service
+   26  telnet localhost 5432
+   27  sudo su - postgres
+   28  apt-get install     ca-certificates     curl     gnupg     lsb-release
+   29  echo   "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu \
+  $(lsb_release -cs) stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+   30  apt update
+   31  sudo apt-get install docker-ce docker-ce-cli containerd.io
+   32  sudo docker run hello-world
+   33  adduser dev
+   34  useradd dev
+   35  passwd dev
+   36  clear
+   37* 
+   38  cat /etc/group
+   39  usermod -a -G docker dev
+   40  cd /etc/postgresql/9.3/main
+   41  ls -l
+   42  cd /etc/postgresql/12/main/
+   43  ls -l
+   44  ip a
+   45  history 
+   46  history >comandospojTaticRoot

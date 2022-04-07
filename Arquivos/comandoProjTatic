@@ -1,0 +1,15 @@
+    1  sudo apt update && apt upgrade
+    2  sudo apt update &&sudo  apt upgrade
+    3  sudo su
+    4  su dev
+    5  docker-run hello-world
+    6  docker run hello-world
+    7  sudo docker run hello-world
+    8  docker pull dpage/pgadmin4
+    9  su dev
+   10  sudo su postgres
+   11  apt install netstat 
+   12  sudo apt install net-tools 
+   13  sudo  netstat -na 
+   14  sudo su postgres
+   15  history >comandoProjTatic
