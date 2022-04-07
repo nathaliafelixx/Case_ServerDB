@@ -4,7 +4,7 @@
 05/04/2022
 Nathalia Felix Rosa
 
-## Objetivos
+## Objetivo
 Criar e configurar um ambiente de servidor linux, para ambiente  de testes de uma aplicação X
 
 ## Especificações
